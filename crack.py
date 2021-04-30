@@ -3,6 +3,7 @@ flag = 0
 
 pass_hash = input('Enter hashed password =>')
 wordlist = input('Enter password wordlist =>')
+wordlist = open(wordlist, 'r')
 
 for word in wordlist:
     enc_wrd = word.encode('utf-8')
